@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Restaurent</title>
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!-- vanila css  -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- fav icom -->
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/png">
+
+    <!-- font ausome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class=" container-fluid bg-dark d-flex justify-content-around align-items-center">
+            <div class="info d-flex gap-3 m-2">
+                <div class="d-flex align-items-center">
+                    <i class="fa-regular fa-envelop me-2 text-white"></i>
+                    <span class="text-light">kazirestaurent@gmail.com</span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-phone-volume me-2 test-white"></i>
+                    <span class="text-light">01234567890</span>
+                </div>
+            </div>
+            <div class="informations">
+                <ul class="d-flex gap-3 list-unstyled" mb-0>
+                    <li><a href="#" class="text-deconation-none text-light">Reservation</a></li>
+                    <li><a href="#" class="text-deconation-none text-light">Login</a></li>
+                    <li><a href="#" class="text-deconation-none text-light">Register</a>a></li>
+                </ul>
+            </div>
+
+    </header>
+
+    <!-- navber -->
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="./images/reslogo.jpeg" width="40" alt=""> Kazi Restaurent</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav-hover active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link nav-hover" href="#">Menu</a>
+                    <a class="nav-link nav-hover" href="#">Reservation</a>
+                    <a class="nav-link nav-hover" href="login.html">Login</a>
+                    <a class="nav-link nav-hover" href="#">Register</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- current time and date  -->
+    <div class="container-fluid p-3 d-flex justify-content-center">
+        <span>Current Date and Time: &nbsp; <span class="text-danger" id="datetime"></span> </span>
+    </div>
+
+
+
+
+    
+<!-- Footer -->
+<footer class="mt-custom">
+    <!-- Newsletter Section -->
+    <div class="bg-warning py-5">
+        <h2 class="fs-3 text-center mb-4">Subscribe Newsletter</h2>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your Email" aria-label="Email Address">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer Links -->
+    <div class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                
+                <!-- Brand Info -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h3 class="fs-4 text-warning">Kazi restaurents</h3>
+                    <p class="fs-6 text-secondary mb-0">Best steak Restaurant</p>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-12 col-md-4 text-center">
+                    <h3 class="fs-4 text-warning">Opening Hours</h3>
+                    <ul class="list-unstyled mb-0 text-secondary">
+                        <li>Mon - Sun</li>
+                        <li class="fw-bold text-light">10 AM - 11 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <h3 class="fs-4 text-warning">Follow Us</h3>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 fs-5">
+                        <a href="#" class="text-light"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-light"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <!-- Copyright -->
+            <p class="fs-6 text-center text-secondary mb-0">
+                &copy; All rights Reserved by kazi restaurent. Made with ❤️
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Subscription Success Modal (Placed outside main footer flow) -->
+<div class="modal fade" id="subscribeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="subscribeModalLabel">Thank You!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+                <p class="mb-1 fw-bold fs-5">Thank you for Subscribing!</p>
+                <p class="text-muted mb-0">Your Cravings, Our Commitment.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- srript add here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
