@@ -41,13 +41,13 @@
                 </div>
             </div>
             <div class="informations">
-                <ul class="d-flex gap-3 list-unstyled" mb-0>
+                <ul class="d-flex gap-3 list-unstyled mb-0">
                     <li><a href="reservation.html" class="text-decoration-none text-light">Reservation</a></li>
                     <li><a href="login.html" class="text-decoration-none text-light">Login</a></li>
                     <li><a href="register.html" class="text-decoration-none text-light">Register</a></li>
                 </ul>
             </div>
-
+         </div>
     </header>
 
 
@@ -85,63 +85,76 @@
 
     <!-- breadcrumb -->
 
-   <div class="container-fluid p-4 d-flex justify-content-start">
-     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-        aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active text-danger" aria-current="page">login</li>
-        </ol>
-    </nav>
+    <div class="container-fluid p-4 d-flex justify-content-start">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">login</li>
+            </ol>
+        </nav>
 
-   </div>
+    </div>
     <!-- breadcrumb nav end  -->
 
 
     <!-- log in form  -->
 
-    <div class="container-fluid ">
-        <form>
-
-            <div class="card w-25 bg-warning mx-auto text-center text-dark">
-            User Login 
-            </div>
-
-            <div class="card-body">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="mb-3">
-                        <label for="exampleFromControlInput" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFromControlInput" placeholder="abc@gmail.com">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                    <!-- header   -->
+                    <div class="bg-warning text-dark text-center py-3 fw-bold fs-4">
+                        User Login
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFromControlPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleFromControlPassword" placeholder="password">
+                    <!-- form body  -->
+                    <div class="card-body p-4">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFromControlInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFromControlInput"
+                                    placeholder="abc@gmail.com">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFromControlPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleFromControlPassword"
+                                    placeholder="Enter password">
+                            </div>
+                            <!-- remeber me and forgot my password  -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label for="rememberMe" class="form-check-label">Remember me</label>
+                                </div>
+                                <a href="#" class="text-danger text-decoration-none float-end">Forgot my password?</a>
+                            </div>
+
+                            <!-- login button  -->
+                            <button type="submit" class="btn btn-warning w-100 mt-3 rounded-pill fw-bold py-2 fs-5">
+                                <i class="fa-solid fa-right-to-bracket me-2"></i>Login
+                            </button>
+
+                            <!-- register section  -->
+                            <div class="mt-3 text-center">
+                                <p>Don't have an account? <br>
+                                    <a href="register.html"
+                                    class="btn btn-outline-warning rounded-pill px-4 fw-semibold">Create Account
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+
                     </div>
 
                 </div>
             </div>
-
-
-
-
-  <!-- <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button> -->
-
-
-</form>
+        </div>
     </div>
+
+
 
 
 
