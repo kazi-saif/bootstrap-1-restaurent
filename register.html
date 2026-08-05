@@ -74,10 +74,6 @@
         </div>
     </nav>
 
-    <!-- current time and date  -->
-    <div class="container-fluid p-3 d-flex justify-content-center">
-        <span>Current Date and Time: &nbsp; <span class="text-danger" id="datetime"></span> </span>
-    </div>
 
 
 
@@ -87,11 +83,55 @@
         aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">login</li>
+            <li class="breadcrumb-item active" aria-current="page">Register</li>
         </ol>
     </nav>
 
+<!-- registration form  -->
 
+    <div class="container my-5">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-9 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                    <!-- header  -->
+                     <div class="bg-warning text-dark text-center py-3 fw-bold fs-4">
+                        Register now
+                     </div>
+
+                     <!-- form body  -->
+                      <div class="card-body ">
+                        <form action="">
+                            <!-- name  -->
+                             <div>
+                                <label for="exampleFromControlName">Full name</label>
+                                <input type="text" class="form-control" id="exampleFromControlName">
+                             </div>
+                             <!-- Email  -->
+                             <div>
+                                <label for="exampleFromControlEmail">Email address</label>
+                                <input type="text" class="form-control" id="exampleFromControlEmail">
+                             </div>
+                             <!-- Password  -->
+                             <div>
+                                <label for="exampleFromControlPassword">Password</label>
+                                <input type="text" class="form-control" id="exampleFromControlPassword">
+                             </div>
+                             <!-- retype passwods  -->
+                             <div>
+                                <label for="exampleFromControlrepass">Retype Password</label>
+                                <input type="text" class="form-control" id="exampleFromControlrepass">
+                             </div>
+                                <!-- submit buttom  -->
+                                 <button  class="btn btn-warning w-100 mt-3 rounded-pill fw-bold py-2 fs-5" type="submit">
+                                    <i class="fa-solid fa-right-to-bracket me-2 bg-warning justify-content-center"></i>Register
+                                 </button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 
 
     <!-- Footer -->
